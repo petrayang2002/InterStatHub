@@ -31,7 +31,7 @@ Both SPSS and R for scale/item reliability
 
 Power analysis
 
-G*Power (Faul et al., 2007, 2009) is a free-to-use software for power analysis. It can calculate different sample sizes and present relevant graphs and tables for each experimental analysis. The types of analysis compatible with G*Power include t tests, F tests, χ2 tests, z tests, and exact tests (correlation, linear multiple regression, proportion, proportions, and generic binomial test). Based on different input parameters, the types of power analysis include A priori, compromise, criterion, post hoc, and sensitivity, which gives different output parameters.
+**G*Power** (Faul et al., 2007, 2009) is a free-to-use software for power analysis. It can calculate different sample sizes and present relevant graphs and tables for each experimental analysis. The types of analysis compatible with G*Power include t tests, F tests, χ2 tests, z tests, and exact tests (correlation, linear multiple regression, proportion, proportions, and generic binomial test). Based on different input parameters, the types of power analysis include A priori, compromise, criterion, post hoc, and sensitivity, which gives different output parameters.
 
 Power analysis can also be conducted in R for F tests, GLMs, t tests, and χ2 tests. A tutorial of conducting power analysis using linguistic empirical data can be found here (Schweinberger, 2022). In R, users need to download packages like pwr (Champely 2020) or lme4 (Green and MacLeod 2016a) for particular types of tests. 
 Amy’s class: Z-test and binomial are also possible in R.
