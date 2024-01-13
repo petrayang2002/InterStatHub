@@ -5,7 +5,7 @@ In this project, we aim to create a practical manual of achieving the interopera
 We will discuss STATA, SPSS, R, MATLAB, and G*Power for social sciences and neuroscience to start this process. Then, we will move onto languages such as Python and behavioral analysis tools such as BORIS and DeepLabCut. Current hubs for data sharing such as Neurodata Without Borders, DANDI, and the Center for Open Science will also be discussed in this section. Finally, you can find tools and packages developed for the most specific uses at the end of this project.
 
 
-## background and gap
+## Background and Gap
 
 Which software is used more or preferred? 
 What is the function for each software or a group of softwares? 
@@ -53,14 +53,14 @@ Python is a programming language for data engineering used in computer science a
 
 
 
-## current HUBs for statistical tools and dataset sharing in different fields
+## Current HUBs for Statistical Tools and Dataset Sharing in Different Fields
 
 In response to the diverse data formats in the neuroscience field, Neurodata Without Borders: Neurophysiology 2.0 (NWB:N; Teeters et al., 2015; Rubel et al., 2019) is developed as a data standard of stimuli, imaging, neurophysiology, and behavioral data. Scientists are now developing processing pipelines for importing and exporting data from and to NWB:N.
 Dandi datasets in the NWB format. 
 
 Center for Open Science, OSF, Reproducibility Project: Psychology | Reproducibility Project: Cancer Biology
 
-## how will our work be useful
+## How Will Our Work Be Useful
 
 Researchers started their training with specific tools like Python, but with the development of more tools and platforms, they need to learn and teach these tools. Our work will help this learning and teaching process by offering straightforward translations between tools.
 
