@@ -1,5 +1,6 @@
 # InterStatHub
 *InterStatHub: Bridging Statistical Tool Interoperability in Social and Biological Sciences*
+
 In this project, we aim to create a practical manual of achieving the interoperability between different statistical tools in the social and biological sciences. We understand that people are trained in different tools and have preferences for some, but we realize that when people come together to communicate over their statistical analysis in areas that are interdisciplinary in nature, a common understanding and usage of multiple statistical tools is necessary; however hard to achieve. We aim to make this process simpler. 
 
 We will discuss STATA, SPSS, R, MATLAB, and G*Power for social sciences and neuroscience to start this process. Then, we will move onto languages such as Python and behavioral analysis tools such as BORIS and DeepLabCut. Current hubs for data sharing such as Neurodata Without Borders, DANDI, and the Center for Open Science will also be discussed in this section. Finally, you can find tools and packages developed for the most specific uses at the end of this project.
