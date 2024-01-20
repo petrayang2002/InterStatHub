@@ -1,5 +1,6 @@
 # InterStatHub
 *InterStatHub: Bridging Statistical Tool Interoperability in Social and Biological Sciences*
+**Created by Tongtong Yang (Petra), Wanqi Zhu (Angie)**
 
 In this project, we aim to create a practical manual of achieving the interoperability between different statistical tools in the social and biological sciences. We understand that people are trained in different tools and have preferences for some, but we realize that when people come together to communicate over their statistical analysis in areas that are interdisciplinary in nature, a common understanding and usage of multiple statistical tools is necessary; however hard to achieve. We aim to make this process simpler. 
 
