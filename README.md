@@ -93,3 +93,6 @@ STATA to R
    A receiver operating characteristic (ROC) curve is used to form a clear cut-off value in order to test a dichotomous classification.
 
 9. [The reticulate package for interoperability between Python and R](https://github.com/rstudio/reticulate)
+
+10. [A R-STATA interface: use STATA commands in R](https://github.com/lbraglia/RStata)
+
