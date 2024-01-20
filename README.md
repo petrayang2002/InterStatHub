@@ -78,13 +78,16 @@ R to STATA
 STATA to R
 
 4. SPSS to R, R to SPSS + OSF
+
    e.g. ANOVA
    e.g. scale/item reliability
    e.g. moderated mediation
 
 6. Power Analysis in G*Power* or R
+
    e.g. F tests, z tests, binomial tests
    
 8. MATLAB & Python + NWB:N
+
    e.g. [Chandravadia et al., 2020](https://www.nature.com/articles/s41597-020-0415-9)
    A receiver operating characteristic (ROC) curve is used to form a clear cut-off value in order to test a dichotomous classification.
