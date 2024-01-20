@@ -10,9 +10,7 @@ We will discuss STATA, SPSS, R, MATLAB, and G*Power for social sciences and neur
 
 ## Background and Gap
 
-Which software is used more or preferred? 
-What is the function for each software or a group of softwares? 
-Why is this function useful?
+Here we offer introductions to the statistical softwares we aim to include, and discuss how they are preferred/regarded useful in certain situations due to their functions.
 
 **STATA and R**
 
