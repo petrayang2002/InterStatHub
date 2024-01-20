@@ -80,7 +80,9 @@ STATA to R
 4. SPSS to R, R to SPSS + OSF
 
    e.g. ANOVA
+
    e.g. scale/item reliability
+
    e.g. moderated mediation
 
 6. Power Analysis in G*Power* or R
