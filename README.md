@@ -86,4 +86,5 @@ STATA to R
    e.g. F tests, z tests, binomial tests
    
 8. MATLAB & Python + NWB:N
-   exmaple: [Chandravadia et al., 2020](https://www.nature.com/articles/s41597-020-0415-9)
+   e.g. [Chandravadia et al., 2020](https://www.nature.com/articles/s41597-020-0415-9)
+   A receiver operating characteristic (ROC) curve is used to form a clear cut-off value in order to test a dichotomous classification.
