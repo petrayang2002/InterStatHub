@@ -57,7 +57,7 @@ Dandi datasets in the NWB format.
 
 Center for Open Science, OSF, Reproducibility Project: Psychology | Reproducibility Project: Cancer Biology
 
-## How Will Our Work Be Useful
+## Why InterStatHub?
 
 Researchers started their training with specific tools like Python, but with the development of more tools and platforms, they need to learn and teach these tools. Our work will help this learning and teaching process by offering straightforward translations between tools.
 
