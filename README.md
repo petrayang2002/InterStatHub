@@ -86,11 +86,12 @@ STATA to R
    e.g. moderated mediation
 
 6. Power Analysis in G*Power* or R
-7. [The reticulate package for interoperability between Python and R](https://github.com/rstudio/reticulate)
 
    e.g. F tests, z tests, binomial tests
    
-9. MATLAB & Python + NWB:N
+8. MATLAB & Python + NWB:N
 
    e.g. [Chandravadia et al., 2020](https://www.nature.com/articles/s41597-020-0415-9)
    A receiver operating characteristic (ROC) curve is used to form a clear cut-off value in order to test a dichotomous classification.
+
+9. [The reticulate package for interoperability between Python and R](https://github.com/rstudio/reticulate)
