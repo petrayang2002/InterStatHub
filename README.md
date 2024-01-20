@@ -48,7 +48,7 @@ MATLAB is a platform and programming language for data analysis and development.
 
 **Python**
 
-Python is a programming language for data engineering used in computer science and neuroscience. Mostly utilized for programming, it can be used to analyze data in a similar way as in MATLAB. An example of this similarity is demonstrated in Chandravadia et al. (2020).
+Python is a programming language for data engineering used in computer science and neuroscience. Mostly utilized for programming, it can be used to analyze data in a similar way as in MATLAB.
 
 
 
