@@ -26,7 +26,7 @@ Limited R to STATA translation. R can use more datasets. STATA cannot use a lot 
 
 **SPSS and R**
 
-SPSS is____________.
+SPSS (Statistical Package for the Social Sciences) or IBM SPSS Statistics is a software for statistical analysis in social sciences and data in other fields. The user can perform analysis in a point-click fashion or by writing and running syntaxes. Syntaxes are often used by advanced analyses that the point-click method cannot cover.
 SPSS and R share a lot of applications and are taught together/interchangeably in some undergraduate level courses. Although SPSS makes use of the “point-click” method, advanced analyses such as mediated moderation in SPSS cannot be conducted by the internal point-click procedures and would require external packages to be downloaded and relevant syntax to be written and run. Furthermore, these advanced analyses and syntaxes are simpler to create than R.
 
 Both SPSS and R for scale/item reliability
@@ -67,3 +67,20 @@ Center for Open Science, OSF, Reproducibility Project: Psychology | Reproducibil
 Researchers started their training with specific tools like Python, but with the development of more tools and platforms, they need to learn and teach these tools. Our work will help this learning and teaching process by offering straightforward translations between tools.
 
 We are first creating novel translations between tools. We are also collecting and summarizing existing translations between tools. These translations occur on a case-by-case basis. Looking for them is time-consuming. Our work can offer straightforward translations in one hub. In addition, we are introducing relatively new platforms and projects that will be more useful for the field if more people hear about and use them.
+
+## Sample analysis using multiple statistical tools
+
+1. *[Data Visualization: A practical Introduction](https://socviz.co/)* by Kieran Healy
+R
+Python
+
+2. *[A User’s Guide To Network Analysis](https://nwcommands.wordpress.com/)* by Douglas A. Luke
+R to STATA
+
+3. *[Memorandum: Stata to R::dplyr](https://github.com/takakishi/stata-to-dplyr)* Written by Takaaki Kishida
+STATA to R
+
+4. SPSS to R, R to SPSS
+5. Power Analysis in G*Power* or R
+6. MATLAB & Python
+   exmaple: [Chandravadia et al., 2020](https://www.nature.com/articles/s41597-020-0415-9)
