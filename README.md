@@ -3,48 +3,51 @@
 
 **Created by Tongtong Yang (Petra) @Petrayang2002 & Wanqi Zhu (Angie) @wanqi-zhu**
 
-In this project, we aim to create a practical manual of achieving the interoperability between different statistical tools in the social and biological sciences. We understand that people are trained in different tools and have preferences for some, but we realize that when people come together to communicate over their statistical analysis in areas that are interdisciplinary in nature, a common understanding and usage of multiple statistical tools is necessary; however hard to achieve. We aim to make this process simpler. 
+In this project, we aim to create a practical manual for achieving interoperability between different statistical tools in the social and biological sciences. We understand that people are trained in different tools and have preferences for some, but we realize that when people come together to communicate over their statistical analysis in areas that are interdisciplinary in nature, a common understanding and usage of multiple statistical tools is necessary; however hard to achieve. We aim to make this process simpler. 
 
-We will discuss STATA, SPSS, R, MATLAB, and G*Power for social sciences and neuroscience to start this process. Then, we will move onto languages such as Python and behavioral analysis tools such as BORIS and DeepLabCut. Current hubs for data sharing such as Neurodata Without Borders, DANDI, and the Center for Open Science will also be discussed in this section. Finally, you can find tools and packages developed for the most specific uses at the end of this project.
+We will discuss STATA, SPSS, R, MATLAB, and G*Power for social sciences and neuroscience to start this process. Then, we will move on to languages such as Python and behavioral analysis tools such as BORIS and DeepLabCut. Current hubs for data sharing such as Neurodata Without Borders, DANDI, and the Center for Open Science will also be discussed in this section. Finally, you can find tools and packages developed for the most specific uses at the end of this project.
 
 
 ## Background and Gap
 
 Here we offer introductions to the statistical softwares we aim to include, and discuss how they are preferred/regarded useful in certain situations due to their functions.
 
-**STATA and R**
+### STATA and R
 
-STATA is __________. R is ____________.
-STATA to R: guides in links
-STATA: econometrics
-Limited R to STATA translation. R can use more datasets. STATA cannot use a lot of datasets. 
+R and Stata are both powerful statistical software packages commonly used by researchers, statisticians, and data analysts for data manipulation, analysis, and visualization. However, they have some differences in terms of their origins, syntax, and capabilities.
 
-[how is STATA limited; Angie’s notebook with STATA codes]
+R is an open-source programming language and it allows users to write their own functions and packages, while Stata is a commercial statistical software package developed by StataCorp, requiring the user to purchase a license. 
 
+Stata's command-line syntax is indeed known for its simplicity and directness, which can be advantageous, especially for users who are new to statistical software. Stata allows users to abbreviate commands as long as the abbreviation is unambiguous. For example, you can use `sum` instead of `summarize`, and Stata will recognize it. R follows a function-based approach, where many operations are performed using functions rather than commands. While R's syntax may initially seem more complex compared to Stata, it provides users with powerful capabilities and a high level of customization. 
 
-**SPSS and R**
+R offers a high degree of flexibility and power when it comes to data manipulation. In R, you can load multiple datasets into memory simultaneously and manipulate them as needed. You can use functions like read.csv() to import datasets into R, and assign each dataset to a different object in the R environment. R has a vast ecosystem of packages specifically designed for data manipulation tasks. 
 
-SPSS (Statistical Package for the Social Sciences) or IBM SPSS Statistics is a software for statistical analysis in social sciences and data in other fields. The user can perform analysis in a point-click fashion or by writing and running syntaxes. Syntaxes (in external packages) are often used by advanced analyses such as mediated moderation that the point-click method cannot cover. SPSS and R are taught together/interchangeably in some undergraduate level courses.
+That said, Stata also offers a range of commands for data manipulation. However, Stata's command-based interface and syntax may require more manual steps for certain data manipulation tasks, especially when dealing with complex operations. Stata commands, by default, operate on the dataset that is currently loaded into memory. This could affect how users merge or transform datasets.
 
 
-**Power analysis**
+### SPSS and R
 
-**G*Power** (Faul et al., 2007, 2009) is a free-to-use software for power analysis. It can calculate different sample sizes and present relevant graphs and tables for each experimental analysis. The types of analysis compatible with G*Power include t tests, F tests, χ2 tests, z tests, and exact tests (correlation, linear multiple regression, proportion, proportions, and generic binomial test). Based on different input parameters, the types of power analysis include A priori, compromise, criterion, post hoc, and sensitivity, which gives different output parameters.
-
-Power analysis can also be conducted in R for F tests, GLMs, z tests, t tests, χ2 tests, and binomial tests. A tutorial of conducting power analysis using linguistic empirical data can be found at https://ladal.edu.au/pwr.html (Schweinberger, 2022). In R, users need to download packages like pwr (Champely, 2020) or lme4 (Green and MacLeod, 2016a) for particular types of tests. 
+SPSS (Statistical Package for the Social Sciences) or IBM SPSS Statistics is a software for statistical analysis in social sciences and data in other fields. The user can perform analysis in a point-click fashion or by writing and running syntaxes. Syntaxes (in external packages) are often used by advanced analyses such as mediated moderation that the point-click method cannot cover. SPSS and R are taught together/interchangeably in some undergraduate-level courses.
 
 
-**NVivo**
+### Power analysis
+
+**G*Power** (Faul et al., 2007, 2009) is a free-to-use software for power analysis. It can calculate different sample sizes and present relevant graphs and tables for each experimental analysis. The types of analysis compatible with G*Power include t-tests, F tests, χ2 tests, z-tests, and exact tests (correlation, linear multiple regression, proportion, proportions, and generic binomial test). Based on different input parameters, the types of power analysis include A priori, compromise, criterion, post hoc, and sensitivity, which gives different output parameters.
+
+Power analysis can also be conducted in R for F tests, GLMs, z tests, t-tests, χ2 tests, and binomial tests. A tutorial on conducting power analysis using linguistic empirical data can be found at https://ladal.edu.au/pwr.html (Schweinberger, 2022). In R, users need to download packages like pwr (Champely, 2020) or lme4 (Green and MacLeod, 2016a) for particular types of tests. 
+
+
+### NVivo
 
 NVivo is a software for qualitative data coding and analysis. For data collected by surveys, researchers can first store it in SPSS, conduct scale reliability tests, then transfer it to NVivo for coding and analysis. Qualitative data collected in other forms, such as field notes, interviews, web pages, and creative textual forms, is usually either directly entered into NVivo and analyzed or coded by hand in a document.
 
 
-**MATLAB**
+### MATLAB
 
-MATLAB is a platform and programming language for data analysis and development. Its capacities range from performing statistical analyses on readable data to designing apps. It is widely used in mathematics, neuroscience, and engineering. Its Live Editor allows group editing on a project, and enables codes to be written in sections with comments and figures. Combined with the GitHub repository and the Jupyter Notebook platform, data analysis pipelines can be generated and shared. Large datasets take longer to process, and there is a limit to that size regardless of the Cloud storage. 
+MATLAB is a platform and programming language for data analysis and development. Its capacities range from performing statistical analyses on readable data to designing apps. It is widely used in mathematics, neuroscience, and engineering. Its Live Editor allows group editing on a project and enables codes to be written in sections with comments and figures. Combined with the GitHub repository and the Jupyter Notebook platform, data analysis pipelines can be generated and shared. Large datasets take longer to process, and there is a limit to that size regardless of the Cloud storage. 
 
 
-**Python**
+### Python
 
 Python is a programming language for data engineering used in computer science and neuroscience. Mostly utilized for programming, it can be used to analyze data in a similar way as in MATLAB.
 
