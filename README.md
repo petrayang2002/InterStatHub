@@ -80,23 +80,22 @@ STATA to R
 
    e.g. moderated mediation
 
-6. Power Analysis in G*Power* or R
+5. Power Analysis in G*Power* or R
 
    e.g. F tests, z tests, binomial tests
    
-7. MATLAB & Python + NWB:N
+6. MATLAB & Python + NWB:N
 
 
-8. [The reticulate package for interoperability between Python and R](https://github.com/rstudio/reticulate)
+7. [The reticulate package for interoperability between Python and R](https://github.com/rstudio/reticulate)
 
+8. [A R-STATA interface: use STATA commands in R](https://github.com/lbraglia/RStata)
 
-9. [A R-STATA interface: use STATA commands in R](https://github.com/lbraglia/RStata)
-
-10. [R and Stata Equivalencies by Chuck Lanfear](https://clanfear.github.io/Stata_R_Equivalency/docs/r_stata_commands.html)
+9. [R and Stata Equivalencies by Chuck Lanfear](https://clanfear.github.io/Stata_R_Equivalency/docs/r_stata_commands.html)
 This github page offers examples of wrangling data, modeling data, and plotting figures in STATA and R ways. Viewers can compare their syntaxes presented side-by-side.
 
 
-11. R packages for data science
+10. R packages for data science
     
     [The tidyverse](https://www.tidyverse.org/) is a collection of R packages for data sciences. The grammar and data structures are shared among all packages. Tidyverse, apart from R packages themselves, also has a blog, [a learning center with resources] (https://www.tidyverse.org/learn/) such as books, workshops, and teaching materials that include semester-long course materials.
     
