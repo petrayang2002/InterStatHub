@@ -95,18 +95,22 @@ STATA to R
 
 10. [R and Stata Equivalencies by Chuck Lanfear](https://clanfear.github.io/Stata_R_Equivalency/docs/r_stata_commands.html)
 
+
 This github page offers examples of wrangling data, modeling data, and plotting figures in STATA and R ways. Viewers can compare their syntaxes presented side-by-side.
 
 
 11. R packages for data science
     
     [The tidyverse](https://www.tidyverse.org/) is a collection of R packages for data sciences. The grammar and data structures are shared among all packages. Tidyverse, apart from R packages themselves, also has a blog, [a learning center with resources] (https://www.tidyverse.org/learn/) such as books, workshops, and teaching materials that include semester-long course materials.
+    
     [Haven](https://github.com/tidyverse/haven) is one of the R packages in Tidyverse. It is useful for reading SPSS, STATA, and SAS files in RStudio. It achieves this goal by wrapping the [ReadStat](https://github.com/WizardMac/ReadStat) C library written by [Evan Miller](https://www.evanmiller.org/). 
+
 
 
 ## Bonus resources: current HUBs for dataset sharing in different fields
 
 **Neuroscience**
+
 In response to the diverse data formats in the neuroscience field, Neurodata Without Borders: Neurophysiology 2.0 ([NWB:N](https://www.nwb.org/); Teeters et al., 2015; Rubel et al., 2019) is developed as a data standard of stimuli, imaging, neurophysiology, and behavioral data. Scientists are now developing processing pipelines for importing and exporting data from and to NWB:N.
 
 Dandi datasets in the NWB format. 
@@ -115,4 +119,5 @@ Dandi datasets in the NWB format.
 
 
 **Psychology, Cancer Biology**
+
 Center for Open Science (OSF) is a hub where psychologists and cancer biologists can share their data and research materials under specific projects with brief information on the project design. In turn, scientists in these fields can read about these projects that might have not been published and access the data.
