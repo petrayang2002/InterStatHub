@@ -92,9 +92,7 @@ STATA to R
 
 9. [A R-STATA interface: use STATA commands in R](https://github.com/lbraglia/RStata)
 
-
 10. [R and Stata Equivalencies by Chuck Lanfear](https://clanfear.github.io/Stata_R_Equivalency/docs/r_stata_commands.html)
-
 This github page offers examples of wrangling data, modeling data, and plotting figures in STATA and R ways. Viewers can compare their syntaxes presented side-by-side.
 
 
