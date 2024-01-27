@@ -53,20 +53,14 @@ Python is a programming language for data engineering used in computer science a
 
 
 
-## Current HUBs for Statistical Tools and Dataset Sharing in Different Fields
-
-In response to the diverse data formats in the neuroscience field, Neurodata Without Borders: Neurophysiology 2.0 (NWB:N; Teeters et al., 2015; Rubel et al., 2019) is developed as a data standard of stimuli, imaging, neurophysiology, and behavioral data. Scientists are now developing processing pipelines for importing and exporting data from and to NWB:N.
-Dandi datasets in the NWB format. 
-
-Center for Open Science, OSF, Reproducibility Project: Psychology | Reproducibility Project: Cancer Biology
-
 ## Why InterStatHub?
 
 Researchers started their training with specific tools like Python, but with the development of more tools and platforms, they need to learn and teach these tools. Our work will help this learning and teaching process by offering straightforward translations between tools.
 
 We are first creating novel translations between tools. We are also collecting and summarizing existing translations between tools. These translations occur on a case-by-case basis. Looking for them is time-consuming. Our work can offer straightforward translations in one hub. In addition, we are introducing relatively new platforms and projects that will be more useful for the field if more people hear about and use them.
 
-## Sample analysis using multiple statistical tools
+
+## Background: Existing tools that engage interoperability between multiple statistical tools
 
 1. *[Data Visualization: A practical Introduction](https://socviz.co/)* by Kieran Healy
 R
@@ -90,18 +84,35 @@ STATA to R
 
    e.g. F tests, z tests, binomial tests
    
-8. MATLAB & Python + NWB:N
+7. MATLAB & Python + NWB:N
 
-   e.g. [Chandravadia et al., 2020](https://www.nature.com/articles/s41597-020-0415-9)
-   A receiver operating characteristic (ROC) curve is used to form a clear cut-off value in order to test a dichotomous classification.
 
-9. [The reticulate package for interoperability between Python and R](https://github.com/rstudio/reticulate)
+8. [The reticulate package for interoperability between Python and R](https://github.com/rstudio/reticulate)
 
-10. [A R-STATA interface: use STATA commands in R](https://github.com/lbraglia/RStata)
 
-11. [R and Stata Equivalencies by Chuck Lanfear](https://clanfear.github.io/Stata_R_Equivalency/docs/r_stata_commands.html)
+9. [A R-STATA interface: use STATA commands in R](https://github.com/lbraglia/RStata)
+
+
+10. [R and Stata Equivalencies by Chuck Lanfear](https://clanfear.github.io/Stata_R_Equivalency/docs/r_stata_commands.html)
 
 This github page offers examples of wrangling data, modeling data, and plotting figures in STATA and R ways. Viewers can compare their syntaxes presented side-by-side.
 
-12. Tidyverse, apart from R packages themselves, also has a blog, [a learning center with resources](https://www.tidyverse.org/learn/) such as books, workshops, and teaching materials that include semester-long course materials. 
 
+11. R packages for data science
+    
+    [The tidyverse](https://www.tidyverse.org/) is a collection of R packages for data sciences. The grammar and data structures are shared among all packages. Tidyverse, apart from R packages themselves, also has a blog, [a learning center with resources] (https://www.tidyverse.org/learn/) such as books, workshops, and teaching materials that include semester-long course materials.
+    [Haven](https://github.com/tidyverse/haven) is one of the R packages in Tidyverse. It is useful for reading SPSS, STATA, and SAS files in RStudio. It achieves this goal by wrapping the [ReadStat](https://github.com/WizardMac/ReadStat) C library written by [Evan Miller](https://www.evanmiller.org/). 
+
+
+## Bonus resources: current HUBs for dataset sharing in different fields
+
+**Neuroscience**
+In response to the diverse data formats in the neuroscience field, Neurodata Without Borders: Neurophysiology 2.0 ([NWB:N](https://www.nwb.org/); Teeters et al., 2015; Rubel et al., 2019) is developed as a data standard of stimuli, imaging, neurophysiology, and behavioral data. Scientists are now developing processing pipelines for importing and exporting data from and to NWB:N.
+
+Dandi datasets in the NWB format. 
+
+[The Rutishauser Laboratory at Cedars-Sinai](https://www.cedars-sinai.edu/research/labs/rutishauser.html) creates software packages for neural spike sorting, stimulus management, and importing neurophysiological data into MATLAB. In addition, the Rutishauser Lab has [published a dataset](https://www.nature.com/articles/s41597-020-0415-9) of behavioral and spiking in the NWB format and relevant MATLAB and Python pipelines for processing the data.
+
+
+**Psychology, Cancer Biology**
+Center for Open Science (OSF) is a hub where psychologists and cancer biologists can share their data and research materials under specific projects with brief information on the project design. In turn, scientists in these fields can read about these projects that might have not been published and access the data.
