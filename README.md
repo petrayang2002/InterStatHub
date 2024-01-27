@@ -97,7 +97,7 @@ This github page offers examples of wrangling data, modeling data, and plotting 
 
 10. R packages for data science
     
-    [The tidyverse](https://www.tidyverse.org/) is a collection of R packages for data sciences. The grammar and data structures are shared among all packages. Tidyverse, apart from R packages themselves, also has a blog, [a learning center with resources] (https://www.tidyverse.org/learn/) such as books, workshops, and teaching materials that include semester-long course materials.
+    [The tidyverse](https://www.tidyverse.org/) is a collection of R packages for data sciences. The grammar and data structures are shared among all packages. Tidyverse, apart from R packages themselves, also has a blog, [a learning center with resources](https://www.tidyverse.org/learn/) such as books, workshops, and teaching materials that include semester-long course materials.
     
     [Haven](https://github.com/tidyverse/haven) is one of the R packages in Tidyverse. It is useful for reading SPSS, STATA, and SAS files in RStudio. It achieves this goal by wrapping the [ReadStat](https://github.com/WizardMac/ReadStat) C library written by [Evan Miller](https://www.evanmiller.org/). 
 
