@@ -20,7 +20,7 @@ R is an open-source programming language and it allows users to write their own 
 
 Stata's command-line syntax is indeed known for its simplicity and directness, which can be advantageous, especially for users who are new to statistical software. Stata allows users to abbreviate commands as long as the abbreviation is unambiguous. For example, you can use `sum` instead of `summarize`, and Stata will recognize it. R follows a function-based approach, where many operations are performed using functions rather than commands. While R's syntax may initially seem more complex compared to Stata, it provides users with powerful capabilities and a high level of customization. 
 
-R offers a high degree of flexibility and power when it comes to data manipulation. In R, you can load multiple datasets into memory simultaneously and manipulate them as needed. You can use functions like read.csv() to import datasets into R, and assign each dataset to a different object in the R environment. R has a vast ecosystem of packages specifically designed for data manipulation tasks. 
+R offers a high degree of flexibility and power when it comes to data manipulation. In R, you can load multiple datasets into memory simultaneously and manipulate them as needed. You can use functions like read.csv() to import datasets into R, and assign each dataset to a different object in the R environment. R has a vast ecosystem of packages specifically designed for data manipulation tasks. For example, the [tidyverse] (https://www.tidyverse.org/) is a [collection of R packages](https://www.tidyverse.org/packages) for data sciences. The grammar and data structures are shared among all packages, making it easier for users to learn and apply them across different tasks.
 
 That said, Stata also offers a range of commands for data manipulation. However, Stata's command-based interface and syntax may require more manual steps for certain data manipulation tasks, especially when dealing with complex operations. Stata commands, by default, operate on the dataset that is currently loaded into memory. This could affect how users merge or transform datasets.
 
@@ -98,4 +98,10 @@ STATA to R
 9. [The reticulate package for interoperability between Python and R](https://github.com/rstudio/reticulate)
 
 10. [A R-STATA interface: use STATA commands in R](https://github.com/lbraglia/RStata)
+
+11. [R and Stata Equivalencies by Chuck Lanfear] (https://clanfear.github.io/Stata_R_Equivalency/docs/r_stata_commands.html)
+
+This github page offers examples of wrangling data, modeling data, and plotting figures in STATA and R ways. Viewers can compare their syntaxes presented side-by-side.
+
+12. Tidyverse, apart from R packages themselves, also has a blog, [a learning center with resources] (https://www.tidyverse.org/learn/) such as books, workshops, and teaching materials that include semester-long course materials. 
 
