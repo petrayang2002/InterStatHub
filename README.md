@@ -104,9 +104,9 @@ This github page offers examples of wrangling data, modeling data, and plotting 
 
 
 ## Directory of InterStatHub: Specific Interoperability between Statistical Tools
-**STATA & R Interoperability** by Wanqi Zhu_Angie
+**[STATA & R Interoperability](https://github.com/petrayang2002/InterStatHub/blob/main/STATA%20%26%20R%20Interoperability)** by Wanqi Zhu_Angie
 
-**SPSS & R Interoperability** by Tongtong Yang_Petra
+**[SPSS & R Interoperability](https://github.com/petrayang2002/InterStatHub/blob/main/SPSS%20%26%20R%20Interoperability)** by Tongtong Yang_Petra
 
 
 
