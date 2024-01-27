@@ -103,5 +103,5 @@ STATA to R
 
 This github page offers examples of wrangling data, modeling data, and plotting figures in STATA and R ways. Viewers can compare their syntaxes presented side-by-side.
 
-12. Tidyverse, apart from R packages themselves, also has a blog, [a learning center with resources] (https://www.tidyverse.org/learn/) such as books, workshops, and teaching materials that include semester-long course materials. 
+12. Tidyverse, apart from R packages themselves, also has a blog, [a learning center with resources](https://www.tidyverse.org/learn/) such as books, workshops, and teaching materials that include semester-long course materials. 
 
