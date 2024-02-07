@@ -6,7 +6,7 @@ by Tongtong Yang_Petra
 There are three types of t-tests: one-sample t-Test, independent samples t-Test, and paired/dependent samples t-Test.
 
 SPSS: In the toolbar, select Analyze > Compare Means > a specific t-test
-
+![Screenshot of the SPSS t-Test page](https://github.com/petrayang2002/InterStatHub/blob/main/SPSS_t-Test.pdf)
 
 R: 1) one-sample t-Test: 
       t.test(Data$Variable, mu = ##, alternative = “two.sided”)
