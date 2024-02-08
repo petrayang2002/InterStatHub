@@ -1,4 +1,4 @@
-**5 Statistical Analyses That Demonstrate the Interoperability between SPSS & R**
+**3 Statistical Analyses That Demonstrate the Interoperability between SPSS & R**
 
 by Tongtong Yang_Petra
 
