@@ -94,14 +94,14 @@ a) the *point-click* method
 
 b) the *syntax* method
 
-1. *one-way ANOVA and post hoc*
+1. one-way ANOVA and post hoc
 ```
 ONEWAY Pretest BY Condition1
   /MISSING ANALYSIS
   /POSTHOC=BTUKEY ALPHA(0.05).
 ```
 
-2. *factorial ANOVA, post hoc, and plot*
+2. factorial ANOVA, post hoc, and plot
 ```
 UNIANOVA Pretest BY Condition1 Condition2
   /METHOD=SSTYPE(3)
@@ -113,7 +113,7 @@ UNIANOVA Pretest BY Condition1 Condition2
   /DESIGN=Condition1 Condition2 Condition1*Condition2.
 ```
 
-3. *multivariate ANOVA (MANOVA)*
+3. multivariate ANOVA (MANOVA)
 ```
 GLM Time1SampleData Time2SampleData BY Condition1
   /METHOD=SSTYPE(3)
@@ -124,7 +124,7 @@ GLM Time1SampleData Time2SampleData BY Condition1
   /DESIGN= Condition1.
 ```
 
-4. *repeated measures ANOVA and plot*
+4. repeated measures ANOVA and plot
 ```
 GLM Time1SampleData Time2SampleData BY Condition2
   /WSFACTOR=TimeDataset 2 Polynomial 
