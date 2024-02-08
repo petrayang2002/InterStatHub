@@ -79,10 +79,18 @@ or `alternative = "less"` or `"more"`
 There are 4 types of ANOVA: one-way ANOVA, factorial ANOVA, multivariate ANOVA (MANOVA), and repeated-measures ANOVA.
 
 **SPSS**
-a) the point-click method
+a) the *point-click* method
+
+- For one-way ANOVA and repeated-measures ANOVA, in the toolbar, select Analyze > Bayesian Statistics > a specific ANOVA
+  ![SPSS_ANOVA1](https://github.com/petrayang2002/InterStatHub/assets/155834271/323aadab-f63f-4324-a05b-bd25a8f3ac9a)
+
+  
+- For factorial and multivariate ANOVA, in the toolbar, select Analyze > General Linear Model > Univariate or Multivariate
+![SPSS_ANOVA2](https://github.com/petrayang2002/InterStatHub/assets/155834271/5b7f88b3-f906-491e-b2cb-9bdcfff7aa49)
 
 
-b) Syntax
+
+b) the *syntax* method
 
 1. *one-way ANOVA and post hoc*
 ```
