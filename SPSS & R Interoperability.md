@@ -41,7 +41,7 @@ In the toolbar, select Analyze > Compare Means > a specific t-test
 
 #a sample is tested against a population mean
 #The default setting of confidence level is 0.95. You can add `conf.level=0.99`
-after `alternative` to make it another value.
+#after `alternative` to make it another value.
 ```
 or `alternative = "less"` or `"more"`
 
@@ -51,13 +51,13 @@ or `alternative = "less"` or `"more"`
       leveneTest(Data$DV~Data$IV)
 
 #leveneTest() from the {car} package is Levene's Test for equal variance of the two samples
-from the same population, DV is changed by IV
+#from the same population, DV is changed by IV
 
       t.test(Data$DV~Data$IV, var.equal=TRUE/FALSE, alternative = “two.sided”)
 
 #var.equal is equal variance based on Levene's Test for equal variance
 #The default setting of confidence level is 0.95. You can add `conf.level=0.99`
-after `alternative` to make it another value.
+#after `alternative` to make it another value.
 ```
 or `alternative = "less"` or `"more"`
 
@@ -68,7 +68,7 @@ or `alternative = "less"` or `"more"`
 
 #testing if there is a difference between two measurements in the same individual
 #The default setting of confidence level is 0.95. You can add `conf.level=0.99`
-after `alternative` to make it another value.
+#after `alternative` to make it another value.
 ```
 or `alternative = "less"` or `"more"`
 
@@ -76,16 +76,20 @@ or `alternative = "less"` or `"more"`
 
 
 ***Analysis 2: ANOVA and post hocs***
+
 There are 4 types of ANOVA: one-way ANOVA, factorial ANOVA, multivariate ANOVA (MANOVA), and repeated-measures ANOVA.
+
 
 **SPSS**
 a) the *point-click* method
 
 - For one-way ANOVA and repeated-measures ANOVA, in the toolbar, select Analyze > Bayesian Statistics > a specific ANOVA
+  
   ![SPSS_ANOVA1](https://github.com/petrayang2002/InterStatHub/assets/155834271/323aadab-f63f-4324-a05b-bd25a8f3ac9a)
 
   
 - For factorial and multivariate ANOVA, in the toolbar, select Analyze > General Linear Model > Univariate or Multivariate
+  
 ![SPSS_ANOVA2](https://github.com/petrayang2002/InterStatHub/assets/155834271/5b7f88b3-f906-491e-b2cb-9bdcfff7aa49)
 
 
