@@ -1,9 +1,7 @@
-**4 Statistical Analyses That Demonstrate the Interoperability between SPSS & R**
-
-by Tongtong Yang_Petra
+# 4 Statistical Analyses That Demonstrate the Interoperability between SPSS & R
 
 
-***Analysis 1: t-Test***
+## Analysis 1: t-Test
 
 There are 3 types of t-tests: one-sample t-Test, independent samples t-Test, and paired/dependent samples t-Test.
 
@@ -25,7 +23,7 @@ The two measurements from the same individual are required.
 
 
 
-**SPSS**
+### SPSS
 
 In the toolbar, select Analyze > Compare Means > a specific t-test
 
@@ -34,7 +32,7 @@ In the toolbar, select Analyze > Compare Means > a specific t-test
 
 
 
-**R**
+### R
    1. one-sample t-Test: 
 ```
       t.test(Data$Variable, mu = ##, alternative = “two.sided”)
@@ -75,12 +73,12 @@ or `alternative = "less"` or `"more"`
 
 
 
-***Analysis 2: ANOVA and post hocs***
+## Analysis 2: ANOVA and post hocs
 
 There are 4 types of ANOVA: one-way ANOVA, factorial ANOVA, multivariate ANOVA (MANOVA), and repeated-measures ANOVA.
 
 
-**SPSS**
+### SPSS
 a) the *point-click* method
 
 - For one-way ANOVA and repeated-measures ANOVA, in the toolbar, select Analyze > Bayesian Statistics > a specific ANOVA
@@ -139,15 +137,18 @@ GLM Time1SampleData Time2SampleData BY Condition2
 ```
 
 
+## R
 
 
-***Analysis 3: Regression and Correlation***
 
 
-***Analysis 4: Mediation***
+## Analysis 3: Regression and Correlation
 
 
-***Analysis 5: Moderation***
+## Analysis 4: Mediation
+
+
+## Analysis 5: Moderation
 
 Binary moderator
 
