@@ -5,6 +5,7 @@ by Tongtong Yang_Petra
 
 *Analysis 1: t-Test*
 
+
 There are three types of t-tests: one-sample t-Test, independent samples t-Test, and paired/dependent samples t-Test.
 
 
@@ -67,7 +68,8 @@ or `alternative = "less"` or `"more"`
       t.test(Data$Variable2, Data$Variable1, paired=TRUE, alternative=“two.sided”)
 
 #testing if there is a difference between two measurements in the same individual
-#The default setting of confidence level is 0.95. You can add `conf.level=0.99` after `alternative` to make it another value.
+#The default setting of confidence level is 0.95. You can add `conf.level=0.99`
+after `alternative` to make it another value.
 ```
 or `alternative = "less"` or `"more"`
 
