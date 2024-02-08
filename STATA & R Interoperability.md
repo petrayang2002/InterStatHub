@@ -2,6 +2,7 @@
 # Social Network Analysis 
 
 R packages: statnet, igraph 
+
 Stata package: nwcommands
 
 | Description | R Command | Stata Command |
