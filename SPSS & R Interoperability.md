@@ -34,7 +34,8 @@ R: 1) one-sample t-Test:
       t.test(Data$Variable, mu = ##, alternative = “two.sided”)
 
 #a sample is tested against a population mean
-#The default setting of confidence level is 0.95. You can add `conf.level=0.99` after `alternative` to make it another value.
+#The default setting of confidence level is 0.95. You can add `conf.level=0.99`
+after `alternative` to make it another value.
 ```
 or `alternative = "less"` or `"more"`
 
@@ -43,12 +44,14 @@ or `alternative = "less"` or `"more"`
 ```
       leveneTest(Data$DV~Data$IV)
 
-#leveneTest() from the {car} package is Levene's Test for equal variance of the two samples from the same population, DV is changed by IV
+#leveneTest() from the {car} package is Levene's Test for equal variance of the two samples
+from the same population, DV is changed by IV
 
       t.test(Data$DV~Data$IV, var.equal=TRUE/FALSE, alternative = “two.sided”)
 
 #var.equal is equal variance based on Levene's Test for equal variance
-#The default setting of confidence level is 0.95. You can add `conf.level=0.99` after `alternative` to make it another value.
+#The default setting of confidence level is 0.95. You can add `conf.level=0.99`
+after `alternative` to make it another value.
 ```
 or `alternative = "less"` or `"more"`
 
