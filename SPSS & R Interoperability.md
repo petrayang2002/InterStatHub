@@ -25,14 +25,15 @@ The two measurements from the same individual are required.
 
 
 
-*SPSS: In the toolbar, select Analyze > Compare Means > a specific t-test*
+**SPSS: In the toolbar, select Analyze > Compare Means > a specific t-test**
 
 ![SPSS_t-Test](https://github.com/petrayang2002/InterStatHub/assets/155834271/315baa07-0bfb-4abb-9186-7614a0f5e1ea)
 
 
 
 
-*R*: 1. one-sample t-Test: 
+**R**
+   1. one-sample t-Test: 
 ```
       t.test(Data$Variable, mu = ##, alternative = “two.sided”)
 
@@ -70,3 +71,7 @@ after `alternative` to make it another value.
 or `alternative = "less"` or `"more"`
 
 
+
+
+***Analysis 2: ANOVA***
+***Analysis 2: Regression and Correlation***
