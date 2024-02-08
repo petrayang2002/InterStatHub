@@ -1,11 +1,11 @@
-**3 Statistical Analyses That Demonstrate the Interoperability between SPSS & R**
+**4 Statistical Analyses That Demonstrate the Interoperability between SPSS & R**
 
 by Tongtong Yang_Petra
 
 
 ***Analysis 1: t-Test***
 
-There are three types of t-tests: one-sample t-Test, independent samples t-Test, and paired/dependent samples t-Test.
+There are 3 types of t-tests: one-sample t-Test, independent samples t-Test, and paired/dependent samples t-Test.
 
 
 1. One-sample t-Test
@@ -75,10 +75,69 @@ or `alternative = "less"` or `"more"`
 
 
 
-***Analysis 2: ANOVA***
+***Analysis 2: ANOVA and post hocs***
+There are 4 types of ANOVA: one-way ANOVA, factorial ANOVA, multivariate ANOVA (MANOVA), and repeated-measures ANOVA.
+
+**SPSS**
+a) the point-click method
+
+
+b) Syntax
+
+1. *one-way ANOVA and post hoc*
+```
+ONEWAY Pretest BY Condition1
+  /MISSING ANALYSIS
+  /POSTHOC=BTUKEY ALPHA(0.05).
+```
+
+2. *factorial ANOVA, post hoc, and plot*
+```
+UNIANOVA Pretest BY Condition1 Condition2
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /POSTHOC=Condition1 Condition2(BTUKEY) 
+  /PLOT=PROFILE(Condition1*Condition2) TYPE=LINE ERRORBAR=NO MEANREFERENCE=NO YAXIS=AUTO
+  /PRINT ETASQ DESCRIPTIVE
+  /CRITERIA=ALPHA(.05)
+  /DESIGN=Condition1 Condition2 Condition1*Condition2.
+```
+
+3. *multivariate ANOVA (MANOVA)*
+```
+GLM Time1SampleData Time2SampleData BY Condition1
+  /METHOD=SSTYPE(3)
+  /INTERCEPT=INCLUDE
+  /POSTHOC=Condition1(TUKEY) 
+  /PRINT=DESCRIPTIVE
+  /CRITERIA=ALPHA(.05)
+  /DESIGN= Condition1.
+```
+
+4. *repeated measures ANOVA and plot*
+```
+GLM Time1SampleData Time2SampleData BY Condition2
+  /WSFACTOR=TimeDataset 2 Polynomial 
+  /METHOD=SSTYPE(3)
+  /PLOT=PROFILE(TimeDataset*Condition2) TYPE=LINE ERRORBAR=NO MEANREFERENCE=NO YAXIS=AUTO
+  /PRINT=DESCRIPTIVE 
+  /CRITERIA=ALPHA(.05)
+  /WSDESIGN=TimeDataset 
+  /DESIGN=Condition2.
+```
 
 
 
 
+***Analysis 3: Regression and Correlation***
 
-***Analysis 2: Regression and Correlation***
+
+***Analysis 4: Mediation***
+
+
+***Analysis 5: Moderation***
+
+Binary moderator
+
+
+***Analysis 6: Exploratory and Confirmatory Factor Analysis***
