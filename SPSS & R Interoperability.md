@@ -36,7 +36,7 @@ SPSS: In the toolbar, select Analyze > Compare Means > a specific t-test
 
 
 
-R: 1) one-sample t-Test: 
+R: 1. one-sample t-Test: 
 ```
       t.test(Data$Variable, mu = ##, alternative = “two.sided”)
 
@@ -47,7 +47,7 @@ after `alternative` to make it another value.
 or `alternative = "less"` or `"more"`
 
 
-   2) independent samples t-Test:
+   2. independent samples t-Test:
 ```
       leveneTest(Data$DV~Data$IV)
 
@@ -63,7 +63,7 @@ after `alternative` to make it another value.
 or `alternative = "less"` or `"more"`
 
 
-   3) Paired/Dependent Samples t-Test: 
+   3. Paired/Dependent Samples t-Test: 
 ```
       t.test(Data$Variable2, Data$Variable1, paired=TRUE, alternative=“two.sided”)
 
