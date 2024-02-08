@@ -1,7 +1,7 @@
 
 # 1. Social Network Analysis 
 
-## Install packages 
+## Install Packages 
 
 R packages: [statnet](https://statnet.org/), [igraph](https://igraph.org/)
 
@@ -17,7 +17,7 @@ net from http://nwcommands.org
 net install ”nwcommands-ado”
 ```
 
-## Introduce commands
+## Introduce Commands
 
 | Description | R Command | Stata Command |
 | --- | --- | --- |
