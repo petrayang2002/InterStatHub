@@ -9,6 +9,6 @@ Stata package: nwcommands
 | --- | --- | --- |
 | Import dataset | `as.network()` | `nwimport`
 | Report network density and size| `summary()` | `tnwsummarize` |
-| Degree (number of direct neighbors) | degree() |`nwdegree`|
+| Degree (number of direct neighbors) | `degree()` |`nwdegree`|
 | Number of components| |`components()`|
 | Plot the network| `nwplot` |`plot()`|
