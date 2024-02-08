@@ -1,10 +1,22 @@
 
 # 1. Social Network Analysis 
 
-R packages: statnet, igraph 
+##Install packages 
+R packages: [statnet](https://statnet.org/), [igraph](https://igraph.org/)
 
-Stata package: nwcommands
+```
+library(statnet)
+detach(package:statnet)
+library(igraph)
+```
 
+Stata package: [nwcommands](http://nwcommands.org)
+```
+net from http://nwcommands.org
+net install ”nwcommands-ado”
+```
+
+##Introduce commands
 | Description | R Command | Stata Command |
 | --- | --- | --- |
 | Import dataset | `as.network()` | `nwimport`
