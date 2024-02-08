@@ -9,6 +9,7 @@ SPSS: In the toolbar, select Analyze > Compare Means > a specific t-test
 ![SPSS_t-Test](https://github.com/petrayang2002/InterStatHub/assets/155834271/315baa07-0bfb-4abb-9186-7614a0f5e1ea)
 
 
+
 R: 1) one-sample t-Test: 
       
       t.test(Data$Variable, mu = ##, alternative = “two.sided”)
