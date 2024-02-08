@@ -153,4 +153,4 @@ GLM Time1SampleData Time2SampleData BY Condition2
 Binary moderator
 
 
-***Analysis 6: Exploratory and Confirmatory Factor Analysis***
+## Analysis 6: Exploratory and Confirmatory Factor Analysis
