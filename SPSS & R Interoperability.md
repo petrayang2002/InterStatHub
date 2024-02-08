@@ -11,7 +11,7 @@ SPSS: In the toolbar, select Analyze > Compare Means > a specific t-test
 
 
 R: 1) one-sample t-Test: 
-
+```
       t.test(Data$Variable, mu = ##, alternative = “two.sided”)
 or alternative = "less" or "more"
 
