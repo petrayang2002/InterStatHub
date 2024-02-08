@@ -6,6 +6,6 @@ Stata package: nwcommands
 
 | Description | R Command | Stata Command |
 | --- | --- | --- |
-| Import dataset | as.network() | newimport
-| Report network density and size| summary() | tnwsummarize |
+| Import dataset | `as.network()` | `nwimport`
+| Report network density and size| `summary()` | `tnwsummarize` |
 
