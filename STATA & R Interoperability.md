@@ -1,5 +1,5 @@
 
-# Social Network Analysis 
+# 1. Social Network Analysis 
 
 R packages: statnet, igraph 
 
@@ -11,4 +11,4 @@ Stata package: nwcommands
 | Report network density and size| `summary()` | `tnwsummarize` |
 | Degree (number of direct neighbors) | `degree()` |`nwdegree`|
 | Number of components| |`components()`|
-| Plot the network| `nwplot` |`plot()`|
+| Plot the network| `nwplot` |`plot()` or `gplot()`|
