@@ -3,8 +3,7 @@
 by Tongtong Yang_Petra
 
 
-*Analysis 1: t-Test*
-
+***Analysis 1: t-Test***
 
 There are three types of t-tests: one-sample t-Test, independent samples t-Test, and paired/dependent samples t-Test.
 
@@ -13,12 +12,9 @@ There are three types of t-tests: one-sample t-Test, independent samples t-Test,
 This t-Test is useful when a sample is tested against a population mean.
 The population mean and the sample data are required.
 
-
-   
 2. Independent samples t-Test
 This t-Test is useful when testing if two samples in the same population are similar.
 The sample data for both samples is required.
-
 
    
 3. Paired/dependent samples t-Test
@@ -29,14 +25,14 @@ The two measurements from the same individual are required.
 
 
 
-SPSS: In the toolbar, select Analyze > Compare Means > a specific t-test
+*SPSS: In the toolbar, select Analyze > Compare Means > a specific t-test*
 
 ![SPSS_t-Test](https://github.com/petrayang2002/InterStatHub/assets/155834271/315baa07-0bfb-4abb-9186-7614a0f5e1ea)
 
 
 
 
-R: 1. one-sample t-Test: 
+*R*: 1. one-sample t-Test: 
 ```
       t.test(Data$Variable, mu = ##, alternative = “two.sided”)
 
