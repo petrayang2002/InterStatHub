@@ -14,7 +14,7 @@ R: 1) one-sample t-Test:
 ```
       t.test(Data$Variable, mu = ##, alternative = “two.sided”)
 or alternative = "less" or "more"
-
+```
 
    2) independent samples t-Test:
       ```
