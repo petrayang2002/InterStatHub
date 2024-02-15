@@ -140,9 +140,7 @@ TukeyHSD(model)
 ```
 
 
-## Moderation
 
-Binary moderator
 
 
 ## Exploratory and Confirmatory Factor Analysis
