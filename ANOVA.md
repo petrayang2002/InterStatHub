@@ -139,16 +139,13 @@ TukeyHSD(model)
 # Conduct post hoc tests between different times
 ```
 
-   
+
 ## Analysis 3: Regression and Correlation
 
 
-## Analysis 4: Mediation
-
-
-## Analysis 5: Moderation
+## Analysis 4: Moderation
 
 Binary moderator
 
 
-## Analysis 6: Exploratory and Confirmatory Factor Analysis
+## Analysis 5: Exploratory and Confirmatory Factor Analysis
