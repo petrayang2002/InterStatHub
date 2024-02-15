@@ -1,29 +1,6 @@
 # 4 Statistical Analyses That Demonstrate the Interoperability between SPSS & R
 
 
-## Analysis 1: t-Test
-
-There are 4 types of t-tests assuming normal distribution: one-sample t-Test, independent samples t-Test, paired/dependent samples t-Test, and two indepdent sample unequal variance t-test.
-
-
-1. One-sample t-Test
-This t-Test is useful when a sample is tested against a population mean.
-The population mean and the sample data are required.
-
-2. Independent samples t-Test
-This t-Test is useful when testing if two samples in the same population are similar.
-The sample data for both samples is required.
-
-   
-3. Paired/dependent samples t-Test
-This t-Test is useful when testing if there is a difference between two measurements in the same individual (within subject test).
-The two measurements from the same individual are required.
-
-4. Two independent sample unequal variance or Welch’s Test
-This t-test is useful when comparing the means of two populations while not assuming equal variance between populations.
-The means of the two populations are required.
-
-
 
 ### SPSS
 
