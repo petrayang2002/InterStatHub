@@ -30,18 +30,19 @@ _Immediate form:_
 ttesti #obs1 #mean1 #sd1 #obs2 #mean2 #sd2 , [options] 
 ```
 
-Two-sample t test using variables 
+### Two-sample t test using variables 
 ```
 ttest varname1 == varname2, unpaired unequal welch level(#) 
 ```
   
-Paired t test 
+### Paired t test 
 
 ```
 ttest varname1 == varname2, level(#) 
 ```
 
 [options]: 
+
 **level(#)** – specifies the confidence level, as a percentage, for confidence intervals. The default is level(95) or as set by set lev
 
 **unequal/welch** – can be used interchangeably, meaning that data has unequal variances 
