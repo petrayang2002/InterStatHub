@@ -1,4 +1,4 @@
-## t-Test using SPSS, R, and STATA
+# t-Test using SPSS, R, and STATA
 
 There are 4 types of t-tests assuming normal distribution: one-sample t-Test, independent samples t-Test, paired/dependent samples t-Test, and two indepdent sample unequal variance t-test.
 
