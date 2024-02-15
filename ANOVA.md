@@ -140,12 +140,9 @@ TukeyHSD(model)
 ```
 
 
-## Analysis 3: Regression and Correlation
-
-
-## Analysis 4: Moderation
+## Moderation
 
 Binary moderator
 
 
-## Analysis 5: Exploratory and Confirmatory Factor Analysis
+## Exploratory and Confirmatory Factor Analysis
