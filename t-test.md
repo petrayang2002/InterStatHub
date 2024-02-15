@@ -42,47 +42,46 @@ ttest Statistics > Summaries, tables, and tests > Classical tests of hypotheses 
 
 ## Syntax 		
 
-### One-sample t test 
+   1. one-sample t-Test: 
 ```
 ttest varname == # if in , level(#)
+#level(#) – specifies the confidence level, as a percentage, for confidence intervals. The default is level(95) or as set by set level
+#Test that the mean of varname is # at the #% confidence level
 ```
 
 _Immediate form:_ 
 
 ```
-ttesti #obs #mean #sd #val , level(#) 
+ttesti #obs #mean #sd #val , level(#)
 ```
 
-### Two-sample t test using groups 
+   2. independent samples t-Test:
 ```
-ttest varname, by(groupvar) [options] 
+ttest varname, by(groupvar) level(#)
+#groupvar is a categorical variable
+
+ttest varname1 == varname2, level(#) unpaired
+# to calculate the differences between varname1 and varname2
 ```
 
 _Immediate form:_ 
 
 ```
-ttesti #obs1 #mean1 #sd1 #obs2 #mean2 #sd2 , [options] 
+ttesti #obs1 #mean1 #sd1 #obs2 #mean2 #sd2 
 ```
 
-### Two-sample t test using variables 
+   3. Paired/Dependent Samples t-Test: 
 ```
-ttest varname1 == varname2, unpaired unequal welch level(#) 
-```
-  
-### Paired t test 
-
-```
-ttest varname1 == varname2, level(#) 
+ttest varname1 == varname2, level(#)
 ```
 
-[options]: 
 
-**level(#)** – specifies the confidence level, as a percentage, for confidence intervals. The default is level(95) or as set by set lev
-
-**unequal/welch** – can be used interchangeably, meaning that data has unequal variances 
-
-**reverse** – reverse group order for mean difference computation (cannot be used in immediate forms)
-
+   4. Two independent sample unequal variance or Welch’s Test:
+```
+ttest varname, by(groupvar) welch level(#)
+ttest varname1 == varname2, unpaired unequal level(#)
+##unequal/welch – welch and unequal can be used interchangeably, meaning that data has unequal variances 
+```
 
 
 # R
