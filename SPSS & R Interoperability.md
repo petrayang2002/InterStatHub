@@ -3,7 +3,7 @@
 
 ## Analysis 1: t-Test
 
-There are 3 types of t-tests: one-sample t-Test, independent samples t-Test, and paired/dependent samples t-Test.
+There are 4 types of t-tests assuming normal distribution: one-sample t-Test, independent samples t-Test, paired/dependent samples t-Test, and two indepdent sample unequal variance t-test.
 
 
 1. One-sample t-Test
@@ -19,7 +19,9 @@ The sample data for both samples is required.
 This t-Test is useful when testing if there is a difference between two measurements in the same individual (within subject test).
 The two measurements from the same individual are required.
 
-
+4. Two independent sample unequal variance or Welch’s Test
+This t-test is useful when comparing the means of two populations while not assuming equal variance between populations.
+The means of the two populations are required.
 
 
 
@@ -29,6 +31,7 @@ In the toolbar, select Analyze > Compare Means > a specific t-test
 
 ![SPSS_t-Test](https://github.com/petrayang2002/InterStatHub/assets/155834271/315baa07-0bfb-4abb-9186-7614a0f5e1ea)
 
+For Welch's Test, select Analyze > Compare Means > One-Way ANOVA, then select Options > check Homogeneity of variance test and the Welch.
 
 
 
@@ -51,31 +54,38 @@ or `alternative = "less"` or `"more"`
 #leveneTest() from the {car} package is Levene's Test for equal variance of the two samples
 #from the same population, DV is changed by IV
 
-      t.test(Data$DV~Data$IV, var.equal=TRUE/FALSE, alternative = “two.sided”)
+      t.test(Data$DV~Data$IV, var.equal=TRUE/FALSE, alternative = “two.sided”, “less”, “greater”)
 
 #var.equal is equal variance based on Levene's Test for equal variance
 #The default setting of confidence level is 0.95. You can add `conf.level=0.99`
 #after `alternative` to make it another value.
 ```
-or `alternative = "less"` or `"more"`
 
 
    3. Paired/Dependent Samples t-Test: 
 ```
-      t.test(Data$Variable2, Data$Variable1, paired=TRUE, alternative=“two.sided”)
+      t.test(Data$Variable2, Data$Variable1, paired=TRUE, alternative=“two.sided”, “less”, “greater”)
 
 #testing if there is a difference between two measurements in the same individual
 #The default setting of confidence level is 0.95. You can add `conf.level=0.99`
 #after `alternative` to make it another value.
 ```
-or `alternative = "less"` or `"more"`
 
+
+   4. Two independent sample unequal variance or Welch’s Test:
+```
+      t.test(x, y, alternative = c(“two.sided”, “less”, “greater”))
+
+#x: first population
+#y: second population
+#The results will give a p-value and the two means for the two populations.
+```
 
 
 
 ## Analysis 2: ANOVA and post hocs
 
-There are 4 types of ANOVA: one-way ANOVA, factorial ANOVA, multivariate ANOVA (MANOVA), and repeated-measures ANOVA.
+The analysis of variance compares between-group variability with within-group variability. This exact ratio of comparison is the F ratio. There are 4 types of ANOVA: one-way ANOVA for one factor and one DV, factorial ANOVA for multiple factors, multivariate ANOVA (MANOVA) for multiple DVs, and repeated-measures ANOVA for multiple within-subject measurements.
 
 
 ### SPSS
@@ -139,9 +149,82 @@ GLM Time1SampleData Time2SampleData BY Condition2
 
 ### R
 
+1. one-way ANOVA and post hoc
+```
+model<-aov(DV~Factor, data=MyData)
+
+# It is important to save your ANOVA using `model` or any other name you want
+
+summary(model)
+
+# Use summary to present the results of your ANOVA.
+
+TukeyHSD(model)
+
+# Using a Tukey HSD function, Conduct a post hoc test of your ANOVA
+# to present the 1-1 comparisons between means
+# so that specific differences between means can be located.
+```
+
+
+2. factorial ANOVA and post hoc
+```
+   model<-aov(DV~Factor1*Factor2, data=MyData)
+
+# It is important to save your ANOVA using `model` or any other name
+
+   summary(model)
+
+# Use summary to present the results of your ANOVA.
+
+   TukeyHSD(model, which = “Factor1”)
+
+# Using a Tukey HSD function, Conduct a post hoc test of main effect
+# for the first factor in  `which = “Factor1” `
+
+   TukeyHSD(model, which = “Factor2”)
+
+# Post hoc of main effect for the second fector
+
+   TukeyHSD(model)
+
+# Conduct post hoc for the interaction effect between factors 1 and 2 on DV.
+```
 
 
 
+3. multivariate ANOVA (MANOVA)
+```
+   model <- manova(cbind(DV1, DV2) ~ Factor, data = MyData)
+
+# It is important to save your ANOVA using `model` or any other name
+
+   summary(model)
+
+# Use summary to present the results of your ANOVA.
+
+   summary.aov(model)
+
+# Conduct another test to see if individual DVs differ between the factor (IV).
+```
+
+
+4. repeated measures ANOVA
+``` 
+   model <- anova_test(data = MyData, dv = DV, wid = Factor, within = time)
+
+   get_anova_table(model)
+
+# This table gives the F-ratio, df, p-value, and ges (the effect size, which is
+# the variability based on the within-subject variable, time.
+
+  
+  pairwise_t_test(DV ~ time, paired = TRUE, p.adjust.method = "bonferroni")
+
+# Conduct post hoc tests between different times
+```
+
+   
 ## Analysis 3: Regression and Correlation
 
 
