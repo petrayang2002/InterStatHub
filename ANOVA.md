@@ -140,7 +140,3 @@ TukeyHSD(model)
 ```
 
 
-
-
-
-## Exploratory and Confirmatory Factor Analysis
