@@ -2,16 +2,6 @@
 
 
 
-### SPSS
-
-In the toolbar, select Analyze > Compare Means > a specific t-test
-
-![SPSS_t-Test](https://github.com/petrayang2002/InterStatHub/assets/155834271/315baa07-0bfb-4abb-9186-7614a0f5e1ea)
-
-For Welch's Test, select Analyze > Compare Means > One-Way ANOVA, then select Options > check Homogeneity of variance test and the Welch.
-
-
-
 ### R
    1. one-sample t-Test: 
 ```
