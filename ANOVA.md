@@ -1,61 +1,9 @@
-# 4 Statistical Analyses That Demonstrate the Interoperability between SPSS & R
-
-
-
-### R
-   1. one-sample t-Test: 
-```
-      t.test(Data$Variable, mu = ##, alternative = “two.sided”)
-
-#a sample is tested against a population mean
-#The default setting of confidence level is 0.95. You can add `conf.level=0.99`
-#after `alternative` to make it another value.
-```
-or `alternative = "less"` or `"more"`
-
-
-   2. independent samples t-Test:
-```
-      leveneTest(Data$DV~Data$IV)
-
-#leveneTest() from the {car} package is Levene's Test for equal variance of the two samples
-#from the same population, DV is changed by IV
-
-      t.test(Data$DV~Data$IV, var.equal=TRUE/FALSE, alternative = “two.sided”, “less”, “greater”)
-
-#var.equal is equal variance based on Levene's Test for equal variance
-#The default setting of confidence level is 0.95. You can add `conf.level=0.99`
-#after `alternative` to make it another value.
-```
-
-
-   3. Paired/Dependent Samples t-Test: 
-```
-      t.test(Data$Variable2, Data$Variable1, paired=TRUE, alternative=“two.sided”, “less”, “greater”)
-
-#testing if there is a difference between two measurements in the same individual
-#The default setting of confidence level is 0.95. You can add `conf.level=0.99`
-#after `alternative` to make it another value.
-```
-
-
-   4. Two independent sample unequal variance or Welch’s Test:
-```
-      t.test(x, y, alternative = c(“two.sided”, “less”, “greater”))
-
-#x: first population
-#y: second population
-#The results will give a p-value and the two means for the two populations.
-```
-
-
-
-## Analysis 2: ANOVA and post hocs
+# ANOVA and post hocs
 
 The analysis of variance compares between-group variability with within-group variability. This exact ratio of comparison is the F ratio. There are 4 types of ANOVA: one-way ANOVA for one factor and one DV, factorial ANOVA for multiple factors, multivariate ANOVA (MANOVA) for multiple DVs, and repeated-measures ANOVA for multiple within-subject measurements.
 
 
-### SPSS
+## SPSS
 a) the *point-click* method
 
 - For one-way ANOVA and repeated-measures ANOVA, in the toolbar, select Analyze > Bayesian Statistics > a specific ANOVA
