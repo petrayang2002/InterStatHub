@@ -89,13 +89,13 @@ ttest varname1 == varname2, level(#)
 
    1. one-sample t-Test: 
 ```
-      t.test(Data$Variable, mu = ##, alternative = “two.sided”)
+      t.test(Data$Variable, mu = ##, alternative = “two.sided”, “less”, “greater”)
 
 #a sample is tested against a population mean
 #The default setting of confidence level is 0.95. You can add `conf.level=0.99`
 #after `alternative` to make it another value.
 ```
-or `alternative = "less"` or `"more"`
+
 
 
    2. independent samples t-Test:
