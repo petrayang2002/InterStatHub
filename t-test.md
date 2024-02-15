@@ -22,6 +22,7 @@ The means of the two populations are required.
 
 
 
+
 # SPSS
 
 In the toolbar, select Analyze > Compare Means > a specific t-test
@@ -29,6 +30,7 @@ In the toolbar, select Analyze > Compare Means > a specific t-test
 ![SPSS_t-Test](https://github.com/petrayang2002/InterStatHub/assets/155834271/315baa07-0bfb-4abb-9186-7614a0f5e1ea)
 
 For Welch's Test, select Analyze > Compare Means > One-Way ANOVA, then select Options > check Homogeneity of variance test and the Welch.
+
 
 
 
@@ -81,4 +83,52 @@ ttest varname1 == varname2, level(#)
 
 **reverse** – reverse group order for mean difference computation (cannot be used in immediate forms)
 
+
+
 # R
+
+   1. one-sample t-Test: 
+```
+      t.test(Data$Variable, mu = ##, alternative = “two.sided”)
+
+#a sample is tested against a population mean
+#The default setting of confidence level is 0.95. You can add `conf.level=0.99`
+#after `alternative` to make it another value.
+```
+or `alternative = "less"` or `"more"`
+
+
+   2. independent samples t-Test:
+```
+      leveneTest(Data$DV~Data$IV)
+
+#leveneTest() from the {car} package is Levene's Test for equal variance of the two samples
+#from the same population, DV is changed by IV
+
+      t.test(Data$DV~Data$IV, var.equal=TRUE/FALSE, alternative = “two.sided”, “less”, “greater”)
+
+#var.equal is equal variance based on Levene's Test for equal variance
+#The default setting of confidence level is 0.95. You can add `conf.level=0.99`
+#after `alternative` to make it another value.
+```
+
+
+   3. Paired/Dependent Samples t-Test: 
+```
+      t.test(Data$Variable2, Data$Variable1, paired=TRUE, alternative=“two.sided”, “less”, “greater”)
+
+#testing if there is a difference between two measurements in the same individual
+#The default setting of confidence level is 0.95. You can add `conf.level=0.99`
+#after `alternative` to make it another value.
+```
+
+
+   4. Two independent sample unequal variance or Welch’s Test:
+```
+      t.test(x, y, alternative = c(“two.sided”, “less”, “greater”))
+
+#x: first population
+#y: second population
+#The results will give a p-value and the two means for the two populations.
+```
+
