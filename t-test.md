@@ -1,4 +1,4 @@
-
+# SPSS
 
 
 # Stata 
@@ -49,3 +49,4 @@ ttest varname1 == varname2, level(#)
 
 **reverse** – reverse group order for mean difference computation (cannot be used in immediate forms)
 
+# R
