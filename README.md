@@ -105,12 +105,19 @@ This github page offers examples of wrangling data, modeling data, and plotting 
 
 ## Directory of InterStatHub: Specific Interoperability between Statistical Tools
 **[t-test.md](https://github.com/petrayang2002/InterStatHub/blob/main/t-test.md)**
+
 **[ANOVA.md](https://github.com/petrayang2002/InterStatHub/blob/main/ANOVA.md)**
+
 **[Regression and Correlation.md](https://github.com/petrayang2002/InterStatHub/blob/main/Regression%20and%20Correlation.md)**
+
 **[Social Network Analysis.md](https://github.com/petrayang2002/InterStatHub/blob/main/Social%20Network%20Analysis.md)**
+
 **[Mediation.md](https://github.com/petrayang2002/InterStatHub/blob/main/Mediation.md)**
+
 **[Moderation.md](https://github.com/petrayang2002/InterStatHub/blob/main/Moderation.md)**
+
 **[Exploratory and Confirmatory Factor Analysis.md](https://github.com/petrayang2002/InterStatHub/blob/main/Exploratory%20and%20Confirmatory%20Factor%20Analysis.md)**
+
 **[References.md](https://github.com/petrayang2002/InterStatHub/blob/main/References.md)**
 
 
