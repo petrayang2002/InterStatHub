@@ -3,7 +3,7 @@
 1. A *correlation* test tells if a continuous variable is associated with another continuous variable.
 Pearson's r (Cohen, 1998) can indicate the strength and the direction (positive or negative) of this association (or no association). 
 
-The association is weak if r is between -.10 to -.30 (negative) or .10 to .30 (positive), moderate if r is between  -.30 to -.50 or .30 to .50, or strong if r is between -.50 to -1.00 or .50 to 1.00.
+The correlation is weak if r is between -.10 to -.30 (negative) or .10 to .30 (positive), moderate if r is between  -.30 to -.50 or .30 to .50, or strong if r is between -.50 to -1.00 or .50 to 1.00.
 
 
 
