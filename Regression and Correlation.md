@@ -8,8 +8,8 @@ The correlation is weak if r is between -.10 to -.30 (negative) or .10 to .30 (p
 
 
 2. *Linear regression* analysis can help us understand if a continuous variable can predict another continuous variable.
-The results of the regression cannot indicate any casual relationships between these variables.
-This regression can also be non linear.
+The results of the regression cannot indicate any casual relationships between these variables. Another kind of regression is the non-linear regression.
+
 
 
 
