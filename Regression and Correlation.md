@@ -55,21 +55,21 @@ Both correlation and linear regression can be run by the Bivariate Pearson corre
 
 1) The point-click method
 
-**Analyze > Correlate > Bivariate > Add variabls > Pearson > Two-tailed or One-tailed 
-  > Flag significant correlations > Options > Exclude cases pairwise or Exclude cases listwise**
+**Analyze > Correlate > Bivariate > Add variabls > Pearson > Two-tailed or One-tailed**
+  **> Flag significant correlations > Options > Exclude cases pairwise or Exclude cases listwise**
 
 
 
 2) The syntax method
 
-   
+```   
 CORRELATIONS
    /VARIABLES=Weight Height
    /PRINT=TWOTAIL NOSIG
    /MISSING=PAIRWISE
+```
 
-
-The omission method here is pairwise.
+  The omission method here is pairwise.
 
 
 
