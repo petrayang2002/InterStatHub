@@ -2,9 +2,9 @@
 
 ```mermaid
 flowchart LR
-    IV["Independent Variable"]-->MV["Mediator Variable"];
-    MV["Mediator Variable"]-->DV["Dependent Variable"];
-    IV["Independent Variable"]-->DV["Dependent Variable"];
+    IV["Independent Variable"]--a-->MV["Mediator Variable"];
+    MV["Mediator Variable"]--b-->DV["Dependent Variable"];
+    IV["Independent Variable"]--c'-->DV["Dependent Variable"];
 ```
 
 
