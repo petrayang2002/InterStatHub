@@ -37,14 +37,44 @@ Another kind of regression is the non-linear regression analysis, in which the t
 
 ```
 
-It is important to omit missing data cases in the dataset. Otherwise, R won't run the correlation or linear regression analyses.
+It is important to omit missing data cases in the dataset. Otherwise, R won't run the correlation or linear regression analyses. 
 
-Use = co
+Omission can happen in either pairwise or listwise. For pairwise deletion, .... For listwise deletion, ....  
+
+The steps are shown below:
+
+
+
 
 
 ## SPSS
 
+
 Both correlation and linear regression can be run by the Bivariate Pearson correlation in SPSS.
+
+
+1) The point-click method
+
+**Analyze > Correlate > Bivariate > Add variabls > Pearson > Two-tailed or One-tailed 
+  > Flag significant correlations > Options > Exclude cases pairwise or Exclude cases listwise**
+
+
+
+2) The syntax method
+
+   
+CORRELATIONS
+   /VARIABLES=Weight Height
+   /PRINT=TWOTAIL NOSIG
+   /MISSING=PAIRWISE
+
+
+The omission method here is pairwise.
+
+
+
+
+  Another useful link that explains [bivariate Pearson correlation in SPSS is](https://libguides.library.kent.edu/SPSS/PearsonCorr)
 
 
 ## STATA
