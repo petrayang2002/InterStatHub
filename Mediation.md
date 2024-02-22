@@ -15,14 +15,14 @@ flowchart LR
 ## R
 
 ```
-fit.totaleffect <- lm(y ~ x, data = dataframe) #for linear regression
-fit.totaleffect <- glm(y ~ x, data = dataframe, family = binomial()) # for logistic regression
+fit.totaleffect <- lm(Y ~ X, data = mydata) #for linear regression
+fit.totaleffect <- glm(Y ~ X, data = mydata, family = binomial()) # for logistic regression
 summary(fit.totaleffect) 
 
-fit.mediator=lm(m~x, data = dataframe)
+fit.mediator=lm(M ~ X, data = mydata)
 summary(fit.mediator)
 
-fit.dv = glm(y ~ m + x, data = dataframe, family = binomial())
+fit.dv = lm(Y ~ M + X, data = mydata)
 summary(fit.dv)
 
 results = mediate(fit.mediator, fit.dv, treat='x', mediator='m', boot=T)
