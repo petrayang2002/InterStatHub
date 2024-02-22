@@ -88,7 +88,7 @@ ttest varname1 == varname2, unpaired unequal level(#)
 
    1. one-sample t-Test: 
 ```
-      t.test(Data$Variable, mu = ##, alternative = “two.sided”, “less”, “greater”)
+      t.test(MyData$Variable, mu = ##, alternative = “two.sided”, “less”, “greater”)
 
 #a sample is tested against a population mean
 #The default setting of confidence level is 0.95. You can add `conf.level=0.99`
@@ -99,12 +99,12 @@ ttest varname1 == varname2, unpaired unequal level(#)
 
    2. independent samples t-Test:
 ```
-      leveneTest(Data$DV~Data$IV)
+      leveneTest(MyData$DV~MyData$IV)
 
 #leveneTest() from the {car} package is Levene's Test for equal variance of the two samples
 #from the same population, DV is changed by IV
 
-      t.test(Data$DV~Data$IV, var.equal=TRUE/FALSE, alternative = “two.sided”, “less”, “greater”)
+      t.test(MyData$DV~MyData$IV, var.equal=TRUE/FALSE, alternative = “two.sided”, “less”, “greater”)
 
 #var.equal is equal variance based on Levene's Test for equal variance
 #The default setting of confidence level is 0.95. You can add `conf.level=0.99`
@@ -114,7 +114,7 @@ ttest varname1 == varname2, unpaired unequal level(#)
 
    3. Paired/Dependent Samples t-Test: 
 ```
-      t.test(Data$Variable2, Data$Variable1, paired=TRUE, alternative=“two.sided”, “less”, “greater”)
+      t.test(MyData$Variable2, MyData$Variable1, paired=TRUE, alternative=“two.sided”, “less”, “greater”)
 
 #testing if there is a difference between two measurements in the same individual
 #The default setting of confidence level is 0.95. You can add `conf.level=0.99`
