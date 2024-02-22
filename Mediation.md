@@ -2,9 +2,9 @@
 
 ```mermaid
 graph TD;
+    X-->Y;
     X-->M;
     M-->Y;
-    X-->Y;
 ```
 
 
