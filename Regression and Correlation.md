@@ -39,10 +39,12 @@ Another kind of regression is the non-linear regression analysis, in which the t
 
 It is important to omit missing data cases in the dataset. Otherwise, R won't run the correlation or linear regression analyses.
 
+Use = co
 
 
 ## SPSS
 
+Both correlation and linear regression can be run by the Bivariate Pearson correlation in SPSS.
 
 
 ## STATA
