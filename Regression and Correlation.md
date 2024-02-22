@@ -39,7 +39,9 @@ Another kind of regression is the non-linear regression analysis, in which the t
 
 It is important to omit missing data cases in the dataset. Otherwise, R won't run the correlation or linear regression analyses. 
 
-Omission can happen in either pairwise or listwise. For pairwise deletion, .... For listwise deletion, ....  
+Listwise deletion (complete-case analysis) removes all data for a case that has one or more missing values. 
+
+Omission can happen in either pairwise or listwise. Pairwise deletion (available-case analysis) omits pairs of data with avaiable values. Listwise deletion (complete-case analysis) omits all data for cases if any value is missing.
 
 The steps are shown below:
 
