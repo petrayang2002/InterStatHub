@@ -25,7 +25,7 @@ summary(fit.mediator)
 fit.dv = lm(DV ~ MV + IV, data = MyData)
 summary(fit.dv)
 
-results = mediate(fit.mediator, fit.dv, treat='x', mediator='m', boot=T)
+results = mediate(fit.mediator, fit.dv, treat='IV', mediator='MV', boot=T)
 summary(results)
 ```
 
