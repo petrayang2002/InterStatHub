@@ -2,8 +2,8 @@
 
 ```mermaid
 graph TD;
-    X-->Y;
     X-->M;
+    X-->Y;
     M-->Y;
 ```
 
