@@ -1,10 +1,10 @@
 # Mediation Analyses
 
 ```mermaid
-graph TD
+flowchart LR
     X-->M;
-    X-->Y;
     M-->Y;
+    X-->Y;
 ```
 
 
