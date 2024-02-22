@@ -2,9 +2,9 @@
 
 ```mermaid
 flowchart LR
-    X-->M;
-    M-->Y;
-    X-->Y;
+    Independent Variable --> Mediator Variable;
+    Mediator Variable --> Dependent Variable;
+    Independent Variable --> Dependent Variable;
 ```
 
 
@@ -15,14 +15,14 @@ flowchart LR
 ## R
 
 ```
-fit.totaleffect <- lm(Y ~ X, data = mydata) #for linear regression
-fit.totaleffect <- glm(Y ~ X, data = mydata, family = binomial()) # for logistic regression
+fit.totaleffect <- lm(DV ~ IV, data = MyData) #for linear regression
+fit.totaleffect <- glm(DV ~ IV, data = MyData, family = binomial()) # for logistic regression
 summary(fit.totaleffect) 
 
-fit.mediator=lm(M ~ X, data = mydata)
+fit.mediator=lm(MV ~ IV, data = MyData)
 summary(fit.mediator)
 
-fit.dv = lm(Y ~ M + X, data = mydata)
+fit.dv = lm(DV ~ MV + IV, data = MyData)
 summary(fit.dv)
 
 results = mediate(fit.mediator, fit.dv, treat='x', mediator='m', boot=T)
