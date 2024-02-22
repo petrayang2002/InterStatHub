@@ -29,6 +29,8 @@ Another kind of regression is the non-linear regression analysis, in which the t
 ```
   lm(DV~IV, data=MyData)
 
+
+  summary(model)
 ```
 
 
