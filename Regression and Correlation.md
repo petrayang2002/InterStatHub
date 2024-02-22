@@ -26,6 +26,10 @@ Another kind of regression is the non-linear regression analysis, in which the t
 
 
 2. Linear regression
+```
+  lm(DV~IV, data=MyData)
+
+```
 
 
 
