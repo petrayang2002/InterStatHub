@@ -1,7 +1,7 @@
 # Mediation Analyses
 
 ```mermaid
-graph TR;
+flowchart TR;
     X-->M;
     X-->Y;
     M-->Y;
