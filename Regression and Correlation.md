@@ -37,7 +37,7 @@ Another kind of regression is the non-linear regression analysis, in which the t
 
 ```
 
-
+It is important to omit missing data cases in the dataset. Otherwise, R won't run the correlation or linear regression analyses.
 
 
 
