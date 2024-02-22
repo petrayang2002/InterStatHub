@@ -74,7 +74,7 @@ CORRELATIONS
 
 
 
-  Another useful link that explains [bivariate Pearson correlation in SPSS is](https://libguides.library.kent.edu/SPSS/PearsonCorr)
+  Another useful link explaining [bivariate Pearson correlation in SPSS](https://libguides.library.kent.edu/SPSS/PearsonCorr)
 
 
 ## STATA
