@@ -14,7 +14,7 @@ flowchart LR
 
 ## R
 
-```ruby
+```
 fit.totaleffect <- lm(y ~ x, data = dataframe) #for linear regression
 fit.totaleffect <- glm(y ~ x, data = dataframe, family = binomial()) # for logistic regression
 summary(fit.totaleffect) 
