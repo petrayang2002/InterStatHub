@@ -1,5 +1,11 @@
 # Mediation Analyses
 
+
+```mermaid
+flowchart LR
+    IV["Independent Variable"]-- c -->DV["Dependent Variable"];
+```
+
 ```mermaid
 flowchart LR
     IV["Independent Variable"]-- a -->MV["Mediator Variable"];
