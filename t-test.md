@@ -44,7 +44,7 @@ ttest Statistics > Summaries, tables, and tests > Classical tests of hypotheses 
 
    1. one-sample t-Test: 
 ```
-ttest varname == # if in , level(#)
+ttest Variable == # if in , level(#)
 #level(#) – specifies the confidence level, as a percentage, for confidence intervals. The default is level(95) or as set by set level
 #Test that the mean of varname is # at the #% confidence level
 ```
@@ -57,11 +57,10 @@ ttesti #obs #mean #sd #val , level(#)
 
    2. independent samples t-Test:
 ```
-ttest varname, by(groupvar) level(#)
-#groupvar is a categorical variable
+ttest DV, by(IV) level(#) #IV is a categorical variable
 
-ttest varname1 == varname2, level(#) unpaired
-# to calculate the differences between varname1 and varname2
+ttest Variable1 == Variable2, level(#) unpaired
+# to calculate the differences between Variable1 and Variable2
 ```
 
 _Immediate form:_ 
@@ -72,14 +71,14 @@ ttesti #obs1 #mean1 #sd1 #obs2 #mean2 #sd2
 
    3. Paired/Dependent Samples t-Test: 
 ```
-ttest varname1 == varname2, level(#)
+ttest Variable1 == Variable2, level(#)
 ```
 
 
    4. Two independent sample unequal variance or Welch’s Test:
 ```
-ttest varname, by(groupvar) welch level(#)
-ttest varname1 == varname2, unpaired unequal level(#)
+ttest DV, by(IV) welch level(#) #IV is a categorical variable
+ttest Variable1 == Variable2, unpaired unequal level(#)
 ##unequal/welch – welch and unequal can be used interchangeably, meaning that data has unequal variances 
 ```
 
