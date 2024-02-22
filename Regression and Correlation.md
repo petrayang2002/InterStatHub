@@ -31,6 +31,10 @@ Another kind of regression is the non-linear regression analysis, in which the t
 
 
   summary(model)
+
+
+# The results will show F value, df, p value, and multiple R-squared (indicating accuracy).
+
 ```
 
 
