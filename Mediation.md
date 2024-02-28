@@ -26,7 +26,6 @@ Path “b” must be significantly different from 0 -- the mediator can lead to 
 
 **Partial mediation**:  If the relationship between IV on DV is still significant in the mediation model, but in a smaller magnitude, MV partially mediates between IV and DV.
 
-
 Mediation Model:
 
 ```mermaid
