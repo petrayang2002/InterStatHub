@@ -1,10 +1,33 @@
 # Mediation Analyses
 
+The goal of mediation analysis is to see if a third variable (a mediator) affects the relationship between the independent and the dependent variable.
+
+Here is the 4-step mediation analysis by Baron & Kenny (1986). 
+
+1. Estimate the total effect between the independent variable & dependent variable
+Path “c” must be significantly different from 0 -- there is a significant relationship between IV on DV
+
+Total Effect Model:
 
 ```mermaid
 flowchart LR
     IV["Independent Variable"]-- c -->DV["Dependent Variable"];
 ```
+
+2. Estimate the relationship between the independent variable on the mediator
+Path “a” must be significantly different from 0 -- there is a significant relationship between MV on IV.
+
+3. Estimate the relationship between the mediator on the dependent variable controlling for the independent variable
+Path “b” must be significantly different from 0 -- the mediator can lead to changes in the dependent variable
+
+4. Estimate the relationship between the independent variable on the dependent variable controlling for the mediator 
+
+**Full mediation**: If the relationship between IV on DV is not significant in the mediation model, MV fully mediates between IV and DV
+
+**Partial mediation**:  If the relationship between IV on DV is still significant in the mediation model, but in a smaller magnitude, MV partially mediates between IV and DV.
+
+
+Mediation Model:
 
 ```mermaid
 flowchart LR
@@ -14,6 +37,7 @@ flowchart LR
 ```
 
 
+
 ## SPSS
 
 
@@ -21,6 +45,8 @@ flowchart LR
 ## R
 
 ```
+library(mediation) #Mediation package
+
 fit.totaleffect <- lm(DV ~ IV, data = MyData) #for linear regression
 fit.totaleffect <- glm(DV ~ IV, data = MyData, family = binomial()) # for logistic regression
 summary(fit.totaleffect) 
