@@ -81,4 +81,17 @@ CORRELATIONS
 
 ## STATA
 
+List-wise deletion of data: 
+
+```
+cor Variable1 Variable2 Variable3 # put all the variables as you wanted to see
+cor Variable1 Variable2 Variable3, covariance # to show covariance
+```
+
+Pair-wise deletion of data: 
+```
+pwcorr Variable1 Variable2 Variable3 
+pwcorr Variable1 Variable2 Variable3, sig # to show significance level of each correlation coefficient
+pwcorr Variable1 Variable2 Variable3, sig star(#)# to show significance level, and star correlation coefficients significant at the # level
+```
 
