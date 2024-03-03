@@ -50,10 +50,15 @@ Here is the 4-step mediation analysis by Baron & Kenny (1986).
 library(mediation) #Mediation package
 
 fit.totaleffect <- lm(DV ~ IV, data = MyData) # linear model
+fit.totaleffect <- lm(log(DV) ~ IV, data = MyData) # exponential-mean model
 fit.totaleffect <- glm(DV ~ IV, data = MyData, family = binomial()) # logistic regression model
+fit.totaleffect <- glm(DV ~ IV, data = MyData, family = binomial(link = "probit")) # probit regression model
+fit.totaleffect <- glm(DV ~ IV, data = MyData, family = 'poisson') # poisson regression model
+
 summary(fit.totaleffect) 
 
 fit.mediator=lm(MV ~ IV, data = MyData)
+# you can have different types of model here, similar to the total effect model
 summary(fit.mediator)
 
 fit.dv = lm(DV ~ MV + IV, data = MyData)
@@ -68,8 +73,8 @@ summary(results)
 
 ```
 mediate (DV) (MV) (IV) #linear model (by default)
-mediate (DV, expmean) (MV, logit) (IV) #exponential-mean model
-mediate (DV, logit) (MV, logit) (IV) #logistic regression model
-mediate (DV, probit) (MV, probit) (IV) #probit regression model
-mediate (DV, poisson) (MV, poisson) (IV) #poisson regression model
+mediate (DV, expmean) (MV, logit) (IV) # exponential-mean model
+mediate (DV, logit) (MV, logit) (IV) # logistic regression model
+mediate (DV, probit) (MV, probit) (IV) # probit regression model
+mediate (DV, poisson) (MV, poisson) (IV) # poisson regression model
 ```
