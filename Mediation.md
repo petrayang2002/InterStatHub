@@ -5,6 +5,7 @@ The goal of mediation analysis is to see if a third variable (a mediator) affect
 Here is the 4-step mediation analysis by Baron & Kenny (1986). 
 
 1. Estimate the total effect between the independent variable & dependent variable
+   
 Path “c” must be significantly different from 0 -- there is a significant relationship between IV on DV
 
 Total Effect Model:
@@ -15,12 +16,14 @@ flowchart LR
 ```
 
 2. Estimate the relationship between the independent variable on the mediator
+   
 Path “a” must be significantly different from 0 -- there is a significant relationship between MV on IV.
 
-3. Estimate the relationship between the mediator on the dependent variable controlling for the independent variable
+4. Estimate the relationship between the mediator on the dependent variable controlling for the independent variable
+   
 Path “b” must be significantly different from 0 -- the mediator can lead to changes in the dependent variable
 
-4. Estimate the relationship between the independent variable on the dependent variable controlling for the mediator 
+6. Estimate the relationship between the independent variable on the dependent variable controlling for the mediator 
 
 **Full mediation**: If the relationship between IV on DV is not significant in the mediation model, MV fully mediates between IV and DV
 
