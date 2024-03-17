@@ -12,39 +12,38 @@ The results of the regression cannot indicate any casual relationships between t
 Another kind of regression is the non-linear regression analysis, in which the two continous variables are related in a curved relationship.
 
 
+It is important to omit missing data cases in the dataset. Otherwise, R won't run the correlation or linear regression analyses. 
+
+Omission can happen in either pairwise or listwise. Pairwise deletion (available-case analysis) omits pairs of data with avaiable values. Listwise deletion (complete-case analysis) omits all data for cases if any value is missing.
 
 
 ## R
 1. Correlation
 ```
-  cor(MyData$Variable1, MyData$Variable2)
+cor(MyData$Variable1, MyData$Variable2)
+
+cor(MyData, use="complete.obs") #listwise (by default) 
+cor(MyData, use="pairwise.complete.obs") #pairwise
 
 # or
 
-  cor.test(MyData$Variable1, MyData$Variable2)
+cor.test(MyData$Variable1, MyData$Variable2)
 ```
 
 
-2. Linear regression
+
+
+2. Regression
 ```
-  model<-lm(DV~IV, data=MyData)
+model <- lm(DV ~ IV, data = MyData) #Linear regression 
+model <- glm(DV ~ IV, data = MyData, family = binomial) #Logistic regression 
 
 
   summary(model)
 
-
 # The results will show F value, df, p value, and multiple R-squared (indicating accuracy).
 
 ```
-
-It is important to omit missing data cases in the dataset. Otherwise, R won't run the correlation or linear regression analyses. 
-
-Listwise deletion (complete-case analysis) removes all data for a case that has one or more missing values. 
-
-Omission can happen in either pairwise or listwise. Pairwise deletion (available-case analysis) omits pairs of data with avaiable values. Listwise deletion (complete-case analysis) omits all data for cases if any value is missing.
-
-The steps are shown below:
-
 
 
 
@@ -77,6 +76,8 @@ CORRELATIONS
 
 
   Another useful link explaining [bivariate Pearson correlation in SPSS](https://libguides.library.kent.edu/SPSS/PearsonCorr)
+
+
 
 
 ## STATA
